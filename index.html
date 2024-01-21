@@ -1,0 +1,252 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="w3.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style/main.css" />
+
+<body>
+  <nav>
+    <nav-brand>SHINGEKI NO KYOJIN</nav-brand>
+    <div>
+      <button class="w3-bar-item w3-button" onclick="openKota('beranda')">
+        Beranda
+      </button>
+      <button class="w3-bar-item w3-button" onclick="openKota('tentang')">
+        Tentang
+      </button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Hero<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block">
+          <button class="w3-bar-item w3-button" onclick="openKota('scouting')">Scouting Legion</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('military')">Military Police</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('stationary')">Stationary Troops</button>
+        </div>
+      </div>
+      <button class="w3-bar-item w3-button" onclick="openKota('profile')">
+        Profil
+      </button>
+      
+    </div>
+  </nav>
+  <div class="container">
+    <div id="beranda" class="w3-container kota w3-animate-zoom" style="display: block">
+  
+        <div class="jumbotron" style="background-color: rgba(255, 255, 255, 0.491); color: black; padding: 50px; border-radius: 20px; margin-bottom: 20px;">
+
+          <div class="left" style="border-right: 2px solid black;">
+            <figure>
+              <figcaption style="background-color: lightcyan; text-align: center; width: 300px; margin: auto;">Shinge No Kyojin</figcaption>
+              <img src="img/Shingeki_no_Kyojin_manga_volume_1.jpg" alt="" style="display: block; margin: auto;">
+            </figure>
+            <p>Shingeki no Kyojin (bahasa Jepang: 進撃の巨人, terj. har. "Raksasa [yang] Menyerang"), yang diterbitkan di Indonesia dengan judul Attack on Titan, adalah sebuah seri manga shōnen asal Jepang yang ditulis dan diilustrasikan oleh Hajime Isayama. Ceritanya berlatar di dunia tempat umat manusia hidup di wilayah yang dikelilingi tiga lapis tembok besar, yang melindungi mereka dari makhluk pemakan manusia berukuran raksasa yang dikenal sebagai Titan. Manga ini dimuat berseri dalam majalah Bessatsu Shōnen Magazine terbitan Kodansha sejak bulan September 2009 hingga April 2021, dan telah diterbitkan menjadi 34 volume tankōbon per bulan Desember 2020.
+            </p>
+          </div>
+
+          <div class="right">
+            <h3 style="text-align: center; font-weight: bold;">Attack On Titan Division</h3>
+          <img src="img/attack-on-titan-768x549.jpg" alt="" height="300" style="display: block; margin: auto; margin-bottom: 20px; border-radius: 20px; border: 2px solid black;">
+          <p style="margin-bottom: 20px;">Seri Attack on Titan menjadi salah satu seri yang banyak diperbincangkan dalam beberapa tahun belakangan. Hal ini dikarenakan cerita yang dihadirkan oleh Hajime Isayama sedikit berbeda dari kebanyakan cerita bergenre Shonen pada umumnya. Meskipun cerita yang dihadirkan di serinya penuh dengan kompleksitas dan juga tone yang ‘gelap’ tetapi, hal inilah yang menjadi daya tarik dan keunikan serinya.</p>
+          </div>
+        </div>
+     <div class="card">
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/scouting-legion.png" alt="">
+        </div>
+        <div class="card__body">
+          <div class="name__division">Scouting Legion</div>
+          <div class="description">Scouting Legion bisa dikatakan sebagai pasukan militer paling berani mati. Tugas utamanya adalah melakukan penyelidikan di luar dinding untuk menyelidiki identitas titan.</div>
+          <div class="tombol">
+            <button style="border: none; padding: 10px; margin-top: 10px; background-color: greenyellow;">Gabung</button>
+            <button style="border: none; padding: 10px; margin-top: 10px; background-color: greenyellow;">Detail</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/stationary-troops.png" alt="">
+        </div>
+        <div class="card__body">
+          <div class="name__division">Stationary Troops</div>
+          <div class="description">Divisi ini sering disebut sebagai pasukan penjaga karena posisi ini bertugas melindungi kota dari serangan titan. Mereka adalah kelompok yang ahli dalam menggunakan berbagai senjata seperti meriam dan senapan.
+            <div class="tombol">
+              <button style="border: none; padding: 10px; margin-top: 10px; background-color: greenyellow;">Gabung</button>
+              <button style="border: none; padding: 10px; margin-top: 10px; background-color: greenyellow;">Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/military-police.png" alt="">
+        </div>
+        <div class="card__body">
+          <div class="name__division">Military Police</div>
+          <div class="description">Divisi ini merupakan divisi yang menjadi favorit banyak orang saat mendaftar pasukan militer karena divisi ini tinggal di pusat kota yang aman dari serangan tita.
+            <div class="tombol">
+              <button style="border: none; padding: 10px; margin-top: 10px; background-color: greenyellow;">Gabung</button>
+              <button style="border: none; padding: 10px; margin-top: 10px; background-color: greenyellow;">Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <h1 style="text-align: center; margin-top: 30px;">Heroes</h1>
+     <div class="card__heroes">
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/eren.jpg" alt="">
+        </div>
+        <div class="card__body" style="background-color: rgb(144, 0, 0);">
+          <div class="name__division" style="text-align: center; color: white;">Eren Yeager</div>
+        </div>
+      </div>
+  
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/mikasa.png" alt="">
+        </div>
+        <div class="card__body" style="background-color: rgb(144, 0, 0);">
+          <div class="name__division" style="text-align: center; color: white;">Mikasa Ackerman</div>
+        </div>
+      </div>  
+
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/armin1.jpg" alt="">
+        </div>
+        <div class="card__body" style="background-color: rgb(144, 0, 0);">
+          <div class="name__division" style="text-align: center; color: white;">Armin Arlert</div>
+        </div>
+      </div>  
+
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/levi.jpg" alt="">
+        </div>
+        <div class="card__body" style="background-color: rgb(144, 0, 0);">
+          <div class="name__division" style="text-align: center; color: white;">Levi Ackerman</div>
+        </div>
+      </div>
+      
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/erwin.jpg" alt="">
+        </div>
+        <div class="card__body" style="background-color: rgb(144, 0, 0);">
+          <div class="name__division" style="text-align: center; color: white;">Erwin Smith</div>
+        </div>
+      </div>  
+
+      <div class="card__list">
+        <div class="card__header">
+          <img src="img/sasha.jpg" alt="">
+        </div>
+        <div class="card__body" style="background-color: rgb(144, 0, 0);">
+          <div class="name__division" style="text-align: center; color: white;">Sasha Braus</div>
+        </div>
+      </div>  
+     </div>
+     </div>
+    </div>
+
+    <div id="tentang" class="w3-container kota w3-animate-zoom" style="display: none">
+      <h1 style="text-align: center;">Tentang</h1>
+      <div class="jumbotron" style="background-color: rgba(255, 255, 255, 0.491); color: black; padding: 50px; border-radius: 20px; margin-bottom: 20px;">
+
+        <div class="left" style="border-right: 2px solid black;">
+          <figure>
+            <figcaption style="background-color: lightcyan; text-align: center; width: 300px; margin: auto;">Shinge No Kyojin</figcaption>
+            <img src="img/Shingeki_no_Kyojin_manga_volume_1.jpg" alt="" style="display: block; margin: auto;">
+          </figure>
+          <p>Shingeki no Kyojin (bahasa Jepang: 進撃の巨人, terj. har. "Raksasa [yang] Menyerang"), yang diterbitkan di Indonesia dengan judul Attack on Titan, adalah sebuah seri manga shōnen asal Jepang yang ditulis dan diilustrasikan oleh Hajime Isayama. Ceritanya berlatar di dunia tempat umat manusia hidup di wilayah yang dikelilingi tiga lapis tembok besar, yang melindungi mereka dari makhluk pemakan manusia berukuran raksasa yang dikenal sebagai Titan. Manga ini dimuat berseri dalam majalah Bessatsu Shōnen Magazine terbitan Kodansha sejak bulan September 2009 hingga April 2021, dan telah diterbitkan menjadi 34 volume tankōbon per bulan Desember 2020.
+          </p>
+        </div>
+
+        <div class="right">
+          <h3 style="text-align: center; font-weight: bold;">Attack On Titan Division</h3>
+        <img src="img/attack-on-titan-768x549.jpg" alt="" height="300" style="display: block; margin: auto; margin-bottom: 20px; border-radius: 20px; border: 2px solid black;">
+        <p style="margin-bottom: 20px;">Seri Attack on Titan menjadi salah satu seri yang banyak diperbincangkan dalam beberapa tahun belakangan. Hal ini dikarenakan cerita yang dihadirkan oleh Hajime Isayama sedikit berbeda dari kebanyakan cerita bergenre Shonen pada umumnya. Meskipun cerita yang dihadirkan di serinya penuh dengan kompleksitas dan juga tone yang ‘gelap’ tetapi, hal inilah yang menjadi daya tarik dan keunikan serinya.</p>
+        </div>
+      </div>
+    </div>
+    <div id="du" class="w3-container kota w3-animate-zoom" style="display: none">
+      <h2>Unikom Dipatiukur</h2>
+      <img src="unikom-du.jpg" alt="" width="300" />
+      <p>
+        Unikom Dipatiukur Meruapakan kampus unikom utama yang gedung keduanya
+        berada di jalan dago
+      </p>
+    </div>
+    <div id="kontak" class="w3-container kota w3-animate-zoom" style="display: none">
+      <div class="heroes__container"></div>
+    </div>
+
+    <div id="profile" class="w3-container kota w3-animate-zoom" style="display: none">
+      <div class="profile-container">
+        <div class="profile-header">
+          <img src="img/eren.jpg" alt="Profile Image">
+          <h1>Rizky Al Farid Hafizh</h1>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="profile-details">
+          <h2>Informasi Pribadi</h2>
+          <ul>
+            <li><strong>Umur:</strong> 19</li>
+            <li><strong>Lokasi:</strong> Bandung, Indonesia</li>
+            <li><strong>Email:</strong> alfaridrizky69@gmail.com</li>
+            <li><strong>Phone:</strong>+62 878xxxxxxxxx</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scouting" class="w3-container kota w3-animate-zoom" style="display: none;">
+    <div class="card__list">
+      <div class="card__header">
+        <img src="img/eren.jpg" alt="">
+      </div>
+      <div class="card__body" style="background-color: rgb(144, 0, 0);">
+        <div class="name__division" style="text-align: center; color: white;">Eren Yeager</div>
+      </div>
+    </div>
+  </div>
+  <div id="military" class="w3-container kota w3-animate-zoom" style="display: none;">
+    <div class="card__list">
+      <div class="card__header">
+        <img src="img/erwin.jpg" alt="">
+      </div>
+      <div class="card__body" style="background-color: rgb(144, 0, 0);">
+        <div class="name__division" style="text-align: center; color: white;">Erwin Smith</div>
+      </div>
+    </div>
+  </div>  <div id="stationary" class="w3-container kota w3-animate-zoom" style="display: none;">
+    <div class="card__list">
+      <div class="card__header">
+        <img src="img/sasha.jpg" alt="">
+      </div>
+      <div class="card__body" style="background-color: rgb(144, 0, 0);">
+        <div class="name__division" style="text-align: center; color: white;">Sasha braus</div>
+      </div>
+    </div>
+  </div>
+ 
+  <script>
+    function openKota(namakota) {
+      var i;
+      var x = document.getElementsByClassName("kota");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(namakota).style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
